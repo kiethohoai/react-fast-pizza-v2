@@ -42,7 +42,7 @@ const cartSlice = createSlice({
     },
 
     clearCart: (state) => {
-      state.cart = {};
+      state.cart = [];
     },
   },
 });
@@ -57,10 +57,12 @@ export const {
 } = cartSlice.actions;
 export default cartSlice.reducer;
 
+export const getCart = (state) => state.cart.cart;
+
+export const getUsername = (state) => state.user.username;
+
 export const getTotalCartQuantity = (state) =>
   state.cart.cart.reduce((sum, cur) => sum + cur.quantity, 0);
 
 export const getTotalCartPrice = (state) =>
   state.cart.cart.reduce((sum, cur) => sum + cur.totalPrice, 0);
-
-
