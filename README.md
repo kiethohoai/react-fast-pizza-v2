@@ -10,3 +10,4 @@
 ================  REDUX ==================
 001 Section Overview
 002 Modeling the User State With Redux Toolkit
+003 Reading and Updating the User State
