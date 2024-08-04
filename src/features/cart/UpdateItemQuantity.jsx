@@ -11,7 +11,7 @@ function UpdateItemQuantity({ pizzaId }) {
   const currentQuantity = useSelector(getCurrentQuantityById(pizzaId));
 
   return (
-    <div className="flex items-center gap-1 md:gap-2">
+    <div className="flex items-center gap-1 md:gap-1.5">
       <Button
         onClick={() => dispatch(decreaseItemQuantity(pizzaId))}
         type="round"
