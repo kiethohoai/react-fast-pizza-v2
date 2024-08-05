@@ -17,3 +17,5 @@
 007 Building the Cart Page
 008 Deleting Cart Items
 009 Updating Cart Quantities
+010 Using the Cart for New Orders
+011 Redux Thunks With createAsyncThunk
